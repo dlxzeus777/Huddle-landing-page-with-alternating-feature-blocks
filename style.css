@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+*/
+
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5rem;
+    padding-top: 10px;
+}
+.heading
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 1rem;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.hero
+{
+    display: flex;
+    gap: 5rem;
+    animation-name: slidein;
+    animation-duration: .5s;
+}
+.hero-img
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.hero-img img{
+    width: 65rem;
+    max-width: 95%;
+}
+.wrapper
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+.hero-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn-container
+{
+    display: flex;
+    width: 100%;
+}
+.header-btn
+{
+    background-color: white;
+    border: none;
+    padding: .7rem 3rem;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+.header-btn:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.get-started-btn
+{
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    padding: 1rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.get-started-btn:hover{
+    background-color: hsl(322, 91%, 78%);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.hero-text p{
+    color: hsl(192, 100%, 9%);
+}
+.containers
+{
+    display: flex;
+    background-color: white;
+    margin: 5rem 0;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 8px;
+    padding: 1.5rem 3rem;
+    gap: 5rem;
+}
+.img-box img{
+    width: 55rem;
+    max-width: 95%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text h3{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+}
+.flowing
+{
+    flex-direction: row-reverse;
+}
+.text p{
+    color: hsl(208, 11%, 55%);
+}
+.community
+{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 8px;
+    padding: 1.5rem 3rem;
+    margin-bottom: -5rem;
+    position: relative;
+}
+footer
+{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 10rem 0;
+    padding-bottom: 1rem;
+}
+.logo-footer img{
+    filter: invert(98%) sepia(3%) saturate(2%) hue-rotate(178deg) brightness(119%) contrast(100%);
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+}
+.icons
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+a:hover
+{
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+    transition: all .2s ease;
+}
+.location
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.career
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-us
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-us p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.career p:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.logo-footer
+{
+    width: 40%;
+}
+.copyright
+{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+@keyframes slidein
+{
+    0%{transform: translateY(30%); opacity: 0;}    
+    100%{transform: translateY(0); opacity: 1;}    
+}
+@keyframes slide
+{
+    0%{transform: translateX(100%);}    
+    100%{transform: translateX(0);}    
+}
+@keyframes slideOpposite
+{
+    0%{transform: translateX(-100%);}    
+    100%{transform: translateX(0);}  
+}
+
+.grow{
+    animation-name: slide;
+    animation-duration: 1s;
+}
+.users{
+    animation-name: slide;
+    animation-duration: 1s;
+}
+.flowing{
+animation-name: slideOpposite;
+animation-duration: 1s;
+}
